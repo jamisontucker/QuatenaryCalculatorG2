@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/srcwork/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/srcwork/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,30 +30,25 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2lX0k3C529WvTRif8BmDcLnwZxh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="openjdk-17" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.UI.executor": "Run",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\modma\IdeaProjects\QuatenaryCalculatorG2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UI">
+  <component name="RunManager">
     <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI" />
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calculator" />
       <module name="src" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,7 +70,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UI" />
-        <item itemvalue="Application.calculator" />
       </list>
     </recent_temporary>
   </component>
