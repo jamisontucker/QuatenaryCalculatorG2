@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/QuatenaryCalculatorG2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QuaternaryCalculatorG2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/UI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/srcwork/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/UI.java" afterDir="false" />
     </list>
@@ -46,6 +48,19 @@
     <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI" />
       <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="QuaternaryCalculatorG2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="QuaternaryCalculatorG2" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

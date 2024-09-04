@@ -1,12 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 public class UI {
 
     public UI(){
-        JFrame frame = new JFrame();
 
-        JLabel calcLabel = new JLabel("");
+        JFrame frame = new JFrame();
+        JTextField textField = new JTextField();
         JButton button0 = new JButton("0");
         JButton button1 = new JButton("1");
         JButton button2 = new JButton("2");
@@ -17,12 +18,10 @@ public class UI {
         JButton buttonDiv = new JButton("/");
 
 
-
-
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
         panel.setLayout(new GridLayout(0,4));
-        panel.add(calcLabel);
+        panel.add(textField);
         panel.add(button0);
         panel.add(button1);
         panel.add(button2);
