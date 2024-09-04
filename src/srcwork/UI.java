@@ -1,19 +1,21 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class UI {
+
     private JTextField textField;
-    private String currentInput = "";
-    private String operator = "";
-    private int firstNumber = 0;
-
+    private String currentOp;
+    private String firstOperand;
     private boolean isQuaternary = true;
-
 
     public UI() {
 
         JFrame frame = new JFrame();
         textField = new JTextField();
+        currentOp = "";
+        firstOperand = "";
 
         JButton button0 = new JButton("0");
         JButton button1 = new JButton("1");
@@ -23,10 +25,11 @@ public class UI {
         JButton buttonSub = new JButton("-");
         JButton buttonMul = new JButton("x");
         JButton buttonDiv = new JButton("/");
-        JButton buttonSquare = new JButton("²\n");
+        JButton buttonSquare = new JButton("²");
         JButton buttonSquareRoot = new JButton("√");
         JButton buttonClear = new JButton("C");
         JButton buttonEqu = new JButton("=");
+
         JButton buttonQuaternary = new JButton("Quaternary");
         JButton buttonDecimal = new JButton("Decimal");
 
@@ -57,36 +60,20 @@ public class UI {
         panelB.add(buttonClear);
         panelB.add(buttonEqu);
 
-        //button0.addActionListener();
-        //button1.addActionListener();
-        //button2.addActionListener();
-        //button3.addActionListener();
-        //buttonPlus.addActionListener();
-        //buttonSub.addActionListener();
-        //buttonMul.addActionListener();
-        //buttonDiv.addActionListener();
-        //buttonSquare.addActionListener();
-        //buttonSquareRoot.addActionListener();
-        //buttonClear.addActionListener();
-        //buttonEqu.addActionListener();
-        //buttonQuaternary.addActionListener();
-        //buttonDecimal.addActionListener();
+        // Add action listeners to buttons
+        button0.addActionListener(e -> appendDigit("0"));
+        button1.addActionListener(e -> appendDigit("1"));
+        button2.addActionListener(e -> appendDigit("2"));
+        button3.addActionListener(e -> appendDigit("3"));
+        buttonPlus.addActionListener(e -> setOperation("+"));
+        buttonSub.addActionListener(e -> setOperation("-"));
+        buttonMul.addActionListener(e -> setOperation("x"));
+        buttonDiv.addActionListener(e -> setOperation("/"));
+        buttonClear.addActionListener(e -> clear());
+        buttonEqu.addActionListener(e -> calculate());
 
-
-        button0.addActionListener(e -> appendToInput("0"));
-        button1.addActionListener(e -> appendToInput("1"));
-        button2.addActionListener(e -> appendToInput("2"));
-        button3.addActionListener(e -> appendToInput("3"));
-        buttonPlus.addActionListener(e -> setOperator("+"));
-        buttonSub.addActionListener(e -> setOperator("-"));
-        buttonMul.addActionListener(e -> setOperator("x"));
-        buttonDiv.addActionListener(e -> setOperator("/"));
-        buttonSquare.addActionListener(e -> performUnaryOperation("square"));
-        buttonSquareRoot.addActionListener(e -> performUnaryOperation("sqrt"));
-        buttonClear.addActionListener(e -> clearInput());
-        buttonEqu.addActionListener(e -> Calculator.calculate());
-        buttonQuaternary.addActionListener(e -> setDisplayMode(true));
-        buttonDecimal.addActionListener(e -> setDisplayMode(false));
+        buttonQuaternary.addActionListener(e -> isQuaternary = true);
+        buttonDecimal.addActionListener(e -> isQuaternary = false);
 
         frame.add(panelT, BorderLayout.PAGE_START);
         frame.add(panelQ, BorderLayout.CENTER);
@@ -95,70 +82,51 @@ public class UI {
         frame.setTitle("Quaternary Calculator");
         frame.pack();
         frame.setVisible(true);
-
-
     }
 
-    private void appendToInput(String value) {
-        currentInput += value;
-        updateTextField();
+    private void appendDigit(String digit) {
+        textField.setText(textField.getText() + digit);
     }
 
-    private void setOperator(String op) {
-        if (!currentInput.isEmpty()) {
-            firstNumber = Calculator.quaternaryToDecimal(currentInput);
-            operator = op;
-            currentInput = "";
-        }
-    }
-
-    private void clearInput() {
-        currentInput = "";
-        operator = "";
+    private void setOperation(String operation) {
+        firstOperand = textField.getText();
+        currentOp = operation;
         textField.setText("");
     }
 
-    private void setDisplayMode(boolean isQuaternary) {
-        this.isQuaternary = isQuaternary;
-        updateTextField();
-    }
-
     private void calculate() {
-        if (!currentInput.isEmpty() && !operator.isEmpty()) {
-            int secondNumber = Calculator.quaternaryToDecimal(currentInput);
-            String result = Calculator.calculate(firstNumber, secondNumber, operator);
-            textField.setText(result);
-            currentInput = "";
-            operator = "";
+        String secondOperand = textField.getText();
+        String result = "";
+
+        switch (currentOp) {
+            case "+":
+                result = Calculator.add(firstOperand, secondOperand);
+                break;
+            case "-":
+                result = Calculator.subtract(firstOperand, secondOperand);
+                break;
+            case "x":
+                result = Calculator.multiply(firstOperand, secondOperand);
+                break;
+            case "/":
+                result = Calculator.divide(firstOperand, secondOperand);
+                break;
         }
+
+        textField.setText(result);
     }
 
-    private void performUnaryOperation(String op) {
-        if (!currentInput.isEmpty()) {
-            int number = Calculator.quaternaryToDecimal(currentInput);
-            String result = Calculator.performUnaryOperation(op, number);
-            textField.setText(result);
-            currentInput = "";
-        }
+    private void clear() {
+        textField.setText("");
+        firstOperand = "";
+        currentOp = "";
     }
 
-    private void updateTextField() {
-        if (isQuaternary) {
-            textField.setText(currentInput);
-        } else {
-            try {
-                int decimalValue = Calculator.quaternaryToDecimal(currentInput);
-                textField.setText(decimalValue + " (Decimal)");
-            } catch (NumberFormatException e) {
-                textField.setText("Invalid Input");
-            }
-        }
-    }
+
 
     public static void main(String[] args) {
         new UI();
-
     }
-
 }
+
 
