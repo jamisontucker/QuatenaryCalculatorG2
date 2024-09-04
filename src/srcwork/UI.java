@@ -58,6 +58,9 @@ public class UI {
         //buttonSub.addActionListener();
         //buttonMul.addActionListener();
         //buttonDiv.addActionListener();
+        //buttonSquare.addActionListener();
+        //buttonSquareRoot.addActionListener();
+        //buttonClear.addActionListener();
         //buttonEqu.addActionListener();
         //buttonQuaternary.addActionListener();
         //buttonDecimal.addActionListener();
