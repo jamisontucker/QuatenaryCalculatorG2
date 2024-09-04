@@ -17,21 +17,27 @@ public class UI {
         JButton buttonMul = new JButton("x");
         JButton buttonDiv = new JButton("/");
 
+        JPanel panelT = new JPanel();
+        panelT.setBorder(BorderFactory.createEmptyBorder(30, 30, 0, 30));
+        panelT.setLayout(new GridLayout(0,1));
+        panelT.add(textField);
 
-        JPanel panel = new JPanel();
-        panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-        panel.setLayout(new GridLayout(0,4));
-        panel.add(textField);
-        panel.add(button0);
-        panel.add(button1);
-        panel.add(button2);
-        panel.add(button3);
-        panel.add(buttonPlus);
-        panel.add(buttonSub);
-        panel.add(buttonMul);
-        panel.add(buttonDiv);
 
-        frame.add(panel, BorderLayout.CENTER);
+        JPanel panelB = new JPanel();
+        panelB.setBorder(BorderFactory.createEmptyBorder(10, 30, 10, 30));
+        panelB.setLayout(new GridLayout(0,4));
+        panelB.add(button0);
+        panelB.add(button1);
+        panelB.add(button2);
+        panelB.add(button3);
+        panelB.add(buttonPlus);
+        panelB.add(buttonSub);
+        panelB.add(buttonMul);
+        panelB.add(buttonDiv);
+
+
+        frame.add(panelT, BorderLayout.PAGE_START);
+        frame.add(panelB, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Quaternary Calculator");
         frame.pack();
