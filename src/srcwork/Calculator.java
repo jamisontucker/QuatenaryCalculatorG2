@@ -1,59 +1,10 @@
-import junit.framework.Assert;
-import org.junit.Test;
-
-public class CalculatorTest{
-
-    @Test
-    //testing for sum operation
-    public void testSum(){
-        Calculator calculator = new Calculator();
-
-        int result = calculator.sum(2,2);
-    
-
-        Asset.assertEquals(10,result);
-    }
-
-     @Test
-    //testing for Minus operation
-    public void testMinus(){
-        Calculator calculator = new Calculator();
-
-        int result = calculator.minus(10,2);
-    
-
-        Asset.assertEquals(2,result);
-    }
-
-     @Test
-    //testing for multiply operation
-    public void testMultiply(){
-        Calculator calculator = new Calculator();
-
-        int result = calculator.multiply(2,2);
-    
-
-        Asset.assertEquals(10,result);
-
-}
-
-@Test
-    //testing for division operation
-    public void testDivide(){
-        Calculator calculator = new Calculator();
-
-        int result = calculator.divide(12,4);
-    
-
-        Asset.assertEquals(3,result);
-
-    }
-
-
-
-
 public class Calculator {
 
+    // Quaternary to Decimal
+    public static String quaternaryToDecimal(String quaternary) {
+        int decimal = Integer.parseInt(quaternary, 4);
+        return String.valueOf(decimal);
+    }
     public static String add(String a, String b) {
         StringBuilder result = new StringBuilder();
         int carry = 0;
@@ -174,5 +125,8 @@ public class Calculator {
         return a.compareTo(b);
     }
 }
+
+
+
 
 

@@ -1,14 +1,13 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class UI {
 
     private JTextField textField;
     private String currentOp;
     private String firstOperand;
-    private boolean isQuaternary = true;
+    private boolean isDecimal; // Toggle between quaternary and decimal display
+    private String lastQuaternaryResult; // Store the last quaternary result
 
     public UI() {
 
@@ -16,6 +15,8 @@ public class UI {
         textField = new JTextField();
         currentOp = "";
         firstOperand = "";
+        isDecimal = false; // Initially show results in quaternary
+        lastQuaternaryResult = ""; // Initialize the last quaternary result
 
         JButton button0 = new JButton("0");
         JButton button1 = new JButton("1");
@@ -29,20 +30,12 @@ public class UI {
         JButton buttonSquareRoot = new JButton("√");
         JButton buttonClear = new JButton("C");
         JButton buttonEqu = new JButton("=");
-
-        JButton buttonQuaternary = new JButton("Quaternary");
-        JButton buttonDecimal = new JButton("Decimal");
+        JButton buttonToggle = new JButton("Quaternary/Decimal");
 
         JPanel panelT = new JPanel();
         panelT.setBorder(BorderFactory.createEmptyBorder(30, 30, 0, 30));
         panelT.setLayout(new GridLayout(0, 1));
         panelT.add(textField);
-
-        JPanel panelQ = new JPanel();
-        panelQ.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 30));
-        panelQ.setLayout(new GridLayout(0, 2));
-        panelQ.add(buttonQuaternary);
-        panelQ.add(buttonDecimal);
 
         JPanel panelB = new JPanel();
         panelB.setBorder(BorderFactory.createEmptyBorder(10, 30, 20, 30));
@@ -60,6 +53,12 @@ public class UI {
         panelB.add(buttonClear);
         panelB.add(buttonEqu);
 
+        // Add toggle button
+        JPanel panelToggle = new JPanel();
+        panelToggle.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 30));
+        panelToggle.setLayout(new GridLayout(0, 1));
+        panelToggle.add(buttonToggle);
+
         // Add action listeners to buttons
         button0.addActionListener(e -> appendDigit("0"));
         button1.addActionListener(e -> appendDigit("1"));
@@ -69,14 +68,16 @@ public class UI {
         buttonSub.addActionListener(e -> setOperation("-"));
         buttonMul.addActionListener(e -> setOperation("x"));
         buttonDiv.addActionListener(e -> setOperation("/"));
+        buttonSquare.addActionListener(e -> square());
+        //buttonSquareRoot.addActionListener(e -> squareRoot());
         buttonClear.addActionListener(e -> clear());
         buttonEqu.addActionListener(e -> calculate());
 
-        buttonQuaternary.addActionListener(e -> isQuaternary = true);
-        buttonDecimal.addActionListener(e -> isQuaternary = false);
+        // Toggle button between quaternary and decimal display
+        buttonToggle.addActionListener(e -> toggleDisplay());
 
         frame.add(panelT, BorderLayout.PAGE_START);
-        frame.add(panelQ, BorderLayout.CENTER);
+        frame.add(panelToggle, BorderLayout.CENTER);
         frame.add(panelB, BorderLayout.PAGE_END);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Quaternary Calculator");
@@ -113,6 +114,12 @@ public class UI {
                 break;
         }
 
+        lastQuaternaryResult = result; // Store the quaternary result
+
+        if (isDecimal) {
+            result = Calculator.quaternaryToDecimal(result);
+        }
+
         textField.setText(result);
     }
 
@@ -120,13 +127,44 @@ public class UI {
         textField.setText("");
         firstOperand = "";
         currentOp = "";
+        lastQuaternaryResult = "";
     }
 
+    private void square() {
+        String operand = textField.getText();
+        String result = Calculator.multiply(operand, operand);
+        lastQuaternaryResult = result; // Store the quaternary result
+        if (isDecimal) {
+            result = Calculator.quaternaryToDecimal(result);
+        }
+        textField.setText(result);
+    }
 
+    //private void squareRoot() {
+    //    String operand = textField.getText();
+    //    String result = Calculator.quaternarySquareRoot(operand);
+    //    lastQuaternaryResult = result; // Store the quaternary result
+    //    if (isDecimal) {
+    //        result = Calculator.quaternaryToDecimal(result);
+    //    }
+    //    textField.setText(result);
+    //}
+
+    // Toggle between quaternary and decimal display
+    private void toggleDisplay() {
+        if (!lastQuaternaryResult.isEmpty()) {
+            isDecimal = !isDecimal;
+            String currentText = textField.getText();
+            if (isDecimal) {
+                textField.setText(Calculator.quaternaryToDecimal(lastQuaternaryResult));
+            } else {
+                textField.setText(lastQuaternaryResult);
+            }
+        }
+    }
 
     public static void main(String[] args) {
         new UI();
     }
 }
-
 
