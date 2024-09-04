@@ -16,6 +16,9 @@ public class UI {
         JButton buttonSub = new JButton("-");
         JButton buttonMul = new JButton("x");
         JButton buttonDiv = new JButton("/");
+        JButton buttonSquare = new JButton("²\n");
+        JButton buttonSquareRoot = new JButton("√");
+        JButton buttonClear = new JButton("C");
         JButton buttonEqu = new JButton("=");
         JButton buttonQuaternary = new JButton("Quaternary");
         JButton buttonDecimal = new JButton("Decimal");
@@ -42,7 +45,23 @@ public class UI {
         panelB.add(buttonSub);
         panelB.add(buttonMul);
         panelB.add(buttonDiv);
+        panelB.add(buttonSquare);
+        panelB.add(buttonSquareRoot);
+        panelB.add(buttonClear);
         panelB.add(buttonEqu);
+
+        //button0.addActionListener();
+        //button1.addActionListener();
+        //button2.addActionListener();
+        //button3.addActionListener();
+        //buttonPlus.addActionListener();
+        //buttonSub.addActionListener();
+        //buttonMul.addActionListener();
+        //buttonDiv.addActionListener();
+        //buttonEqu.addActionListener();
+        //buttonQuaternary.addActionListener();
+        //buttonDecimal.addActionListener();
+
 
         frame.add(panelT, BorderLayout.PAGE_START);
         frame.add(panelQ, BorderLayout.CENTER);

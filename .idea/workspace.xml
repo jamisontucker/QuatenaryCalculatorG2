@@ -42,9 +42,16 @@
       <recent name="C:\Users\modma\IdeaProjects\QuatenaryCalculatorG2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UI">
     <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UI" />
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator" />
       <module name="src" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -66,6 +73,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UI" />
+        <item itemvalue="Application.calculator" />
       </list>
     </recent_temporary>
   </component>
