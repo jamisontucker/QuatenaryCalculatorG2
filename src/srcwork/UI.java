@@ -16,15 +16,23 @@ public class UI {
         JButton buttonSub = new JButton("-");
         JButton buttonMul = new JButton("x");
         JButton buttonDiv = new JButton("/");
+        JButton buttonEqu = new JButton("=");
+        JButton buttonQuaternary = new JButton("Quaternary");
+        JButton buttonDecimal = new JButton("Decimal");
 
         JPanel panelT = new JPanel();
         panelT.setBorder(BorderFactory.createEmptyBorder(30, 30, 0, 30));
         panelT.setLayout(new GridLayout(0,1));
         panelT.add(textField);
 
+        JPanel panelQ = new JPanel();
+        panelQ.setBorder(BorderFactory.createEmptyBorder(0, 30, 0, 30));
+        panelQ.setLayout(new GridLayout(0,2));
+        panelQ.add(buttonQuaternary);
+        panelQ.add(buttonDecimal);
 
         JPanel panelB = new JPanel();
-        panelB.setBorder(BorderFactory.createEmptyBorder(10, 30, 10, 30));
+        panelB.setBorder(BorderFactory.createEmptyBorder(10, 30, 20, 30));
         panelB.setLayout(new GridLayout(0,4));
         panelB.add(button0);
         panelB.add(button1);
@@ -34,10 +42,11 @@ public class UI {
         panelB.add(buttonSub);
         panelB.add(buttonMul);
         panelB.add(buttonDiv);
-
+        panelB.add(buttonEqu);
 
         frame.add(panelT, BorderLayout.PAGE_START);
-        frame.add(panelB, BorderLayout.CENTER);
+        frame.add(panelQ, BorderLayout.CENTER);
+        frame.add(panelB, BorderLayout.PAGE_END);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Quaternary Calculator");
         frame.pack();
