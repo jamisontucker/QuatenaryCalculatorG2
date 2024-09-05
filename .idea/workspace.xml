@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory" />
+    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +38,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2lX0k3C529WvTRif8BmDcLnwZxh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -52,6 +59,7 @@
     "JUnit.CalculatorTest.testMultiply.executor": "Run",
     "JUnit.CalculatorTest.testQuaternaryToDecimal.executor": "Run",
     "JUnit.CalculatorTest.testSubtract.executor": "Run",
+    "JUnit.CalculatorTest.testeDivideByZero.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -194,7 +202,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.testQuaternaryToDecimal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatorTest.testeDivideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
         <pattern>
@@ -204,7 +212,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CalculatorTest" />
-      <option name="METHOD_NAME" value="testQuaternaryToDecimal" />
+      <option name="METHOD_NAME" value="testeDivideByZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,10 +221,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testeDivideByZero" />
         <item itemvalue="Application.CalculatorTest" />
         <item itemvalue="JUnit.CalculatorTest.testAdd" />
         <item itemvalue="JUnit.CalculatorTest.testDivide" />
-        <item itemvalue="JUnit.CalculatorTest.testQuaternaryToDecimal" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725572578504</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add unittest for operations in new directory">
+      <option name="closed" value="true" />
+      <created>1725572646097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725572646097</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,5 +278,20 @@
     <MESSAGE value="Added +, -, * and / methods" />
     <MESSAGE value="Add unittest for operations in new directory" />
     <option name="LAST_COMMIT_MESSAGE" value="Add unittest for operations in new directory" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java</url>
+          <line>40</line>
+          <properties class="Test.CalculatorTest" method="testeDivideByZero">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

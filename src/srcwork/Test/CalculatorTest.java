@@ -37,6 +37,12 @@ public class CalculatorTest {
         assertEquals("6", result);  // "10" in quaternary equals "4" in decimal
     }
 
+    @Test
+    public void testeDivideByZero(){
+        String result = Calculator.divide("12","0");
+        assertEquals("Error: Division by zero", result);
+    }
+
         public static void main(String[] args) {
 
         System.out.println("Add two numbers 10 + 3 :" + add( "10", "3"));
