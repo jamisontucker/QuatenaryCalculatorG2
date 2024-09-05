@@ -137,10 +137,10 @@ public class Calculator {
         //test add
 
         System.out.println("Subtract two numbers 3 - 2 :" + subtract( "3", "2"));
-        //test substract
+        //test subtract
 
         System.out.println("Multiply two numbers 3 X 3 :" + multiply( "3", "3"));
-        //test mulitply
+        //test multiply
 
         System.out.println("Divide two numbers 23 / 12:" + divide("23", "12"));
     }

@@ -38,7 +38,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testeDivideByZero(){
+    public void testDivideByZero(){
         String result = Calculator.divide("12","0");
         assertEquals("Error: Division by zero", result);
     }
@@ -49,13 +49,13 @@ public class CalculatorTest {
         //test add
 
         System.out.println("Subtract two numbers 3 - 2 :" + subtract( "3", "2"));
-        //test substract
+        //test subtract
 
         System.out.println("Multiply two numbers 3 X 3 :" + multiply( "3", "3"));
-        //test mulitply
+        //test multiply
 
         System.out.println("Divide two numbers 23/12:" + divide("23", "12"));
 
-        System.out.println("Quatenary to Deimal 12: " + quaternaryToDecimal("12"));
+        System.out.println("Quaternary to Decimal 12: " + quaternaryToDecimal("12"));
     }
 }
