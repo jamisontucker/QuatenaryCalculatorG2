@@ -1,3 +1,5 @@
+package Test;
+
 
 
 
@@ -126,6 +128,21 @@ public class Calculator {
         }
 
         return a.compareTo(b);
+    }
+    // add main method for testing operations purpose
+
+    public static void main(String[] args) {
+
+        System.out.println("Add two numbers 10 + 3 :" + add( "10", "3"));
+        //test add
+
+        System.out.println("Subtract two numbers 3 - 2 :" + subtract( "3", "2"));
+        //test substract
+
+        System.out.println("Multiply two numbers 3 X 3 :" + multiply( "3", "3"));
+        //test mulitply
+
+        System.out.println("Divide two numbers 23 / 12:" + divide("23", "12"));
     }
 }
 
