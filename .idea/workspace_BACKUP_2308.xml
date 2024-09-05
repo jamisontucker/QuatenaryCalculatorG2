@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
       <change beforePath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" afterDir="false" />
+>>>>>>> 2a20b0e6f3673e579dce7a424bbd0714e33660d4
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
