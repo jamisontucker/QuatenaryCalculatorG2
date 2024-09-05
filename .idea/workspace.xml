@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Added +, -, * and / methods">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/srcwork/Test/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/QuaternaryCalculatorG2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QuaternaryCalculatorG2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/src.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/srcwork/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/srcwork/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/UI.java" afterDir="false" />
-    </list>
+    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725487842592</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add unittest for operations in new directory">
+      <option name="closed" value="true" />
+      <created>1725572578504</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725572578504</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,26 +260,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added +, -, * and / methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added +, -, * and / methods" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java</url>
-          <line>34</line>
-          <properties class="Test.CalculatorTest" method="testQuaternaryToDecimal">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Add unittest for operations in new directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unittest for operations in new directory" />
   </component>
 </project>
