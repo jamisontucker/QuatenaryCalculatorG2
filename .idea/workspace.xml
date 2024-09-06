@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory" />
+    <list default="true" id="0dbf0291-4b92-4432-94b5-1993e330a533" name="Changes" comment="Add unittest for operations in new directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Test/CalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +32,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/srcwork/CalculatorTest.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,12 +47,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UI.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.CalculatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testDivide.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testMultiply.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testQuaternaryToDecimal.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testSubtract.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CalculatorTest.testeDivideByZero.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IntelliJ IDEA 2024.2.1/lib/junit4.jar&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\modma\IdeaProjects\QuatenaryCalculatorG2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UI">
+  <component name="RunManager" selected="JUnit.CalculatorTest">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,13 +155,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UI" />
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -161,6 +186,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculatorTest.testDivideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CalculatorTest" />
+      <option name="METHOD_NAME" value="testDivideByZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest.testeDivideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <extension name="coverage">
@@ -179,10 +220,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UI" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.testeDivideByZero" />
         <item itemvalue="Application.CalculatorTest" />
+        <item itemvalue="JUnit.CalculatorTest.testDivideByZero" />
+        <item itemvalue="JUnit.CalculatorTest.testeDivideByZero" />
         <item itemvalue="JUnit.CalculatorTest.testAdd" />
       </list>
     </recent_temporary>
@@ -237,5 +278,20 @@
     <MESSAGE value="Added +, -, * and / methods" />
     <MESSAGE value="Add unittest for operations in new directory" />
     <option name="LAST_COMMIT_MESSAGE" value="Add unittest for operations in new directory" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/srcwork/Test/CalculatorTest.java</url>
+          <line>40</line>
+          <properties class="Test.CalculatorTest" method="testeDivideByZero">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
