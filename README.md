@@ -6,7 +6,7 @@ Quaternary Calculator group 2 CS495 Fall 2024
 - Spencer Buck = Calculator Equations
 - Chit Ko Ko = Unit Testing
 - Jamison Tucker = Calculator UI Design
-- Jessica Walter = Calculator Button Calling
+- Jessica Walter = Front End / Back End 
 - Shaun Whitlow = Quaternary/Decimal Conversion
 
 ### Group Meetings
@@ -22,5 +22,7 @@ The Calculator operates in base 4 Quaternary.
 The only usable numbers are 0, 1, 2, and 3.
 The possible operation for use in the Calculator are as follows:
 Addition, Subtraction, Multiplication, Division, 
-Squared, and Square Root.
+Square, and Square Root.
 The Calculator can also convert the given Quaternary number into its Decimal counterpart.
+
+![Screenshot of the calculator](C:\Users\modma\IdeaProjects\QuatenaryCalculatorG2\src\srcwork\QuaternaryCalc.png)
