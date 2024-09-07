@@ -1,8 +1,6 @@
 package Test;
 
 
-
-
 public class Calculator {
 
     // Quaternary to Decimal
