@@ -117,6 +117,21 @@ public class Calculator {
         return quotient;
     }
 
+
+    public static String quaternarySquareRoot(String a) {
+
+        double t;
+        double squareroot = Double.parseDouble(a) / 2;
+        do
+        {
+            t = squareroot;
+            squareroot = (t + Double.parseDouble(a) / t) / 2;
+        }
+        while ((t - squareroot) != 0);
+        return String.valueOf(squareroot);
+
+    }
+
     private static int compareQuaternary(String a, String b) {
         a = a.replaceFirst("^0+", "");
         b = b.replaceFirst("^0+", "");
@@ -141,6 +156,8 @@ public class Calculator {
         //test multiply
 
         System.out.println("Divide two numbers 23 / 12:" + divide("23", "12"));
+
+        System.out.println("Square root of 23:" + quaternarySquareRoot("23"));
     }
 }
 

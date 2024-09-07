@@ -10,31 +10,31 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         String result = add("3", "2");  // In quaternary system
-        assertEquals("11", result);  // Expecting "22" as the result in quaternary system
+        assertEquals("11", result);
     }
 
     @Test
     public void testSubtract() {
         String result = subtract("13", "3");  // Subtraction in quaternary
-        assertEquals("10", result);  // Expecting "10" as result
+        assertEquals("10", result);
     }
 
     @Test
     public void testMultiply() {
         String result = multiply("2", "2");
-        assertEquals("10", result);  // Expecting "10" in quaternary
+        assertEquals("10", result);
     }
 
     @Test
     public void testDivide() {
         String result = Calculator.divide("10", "2");
-        assertEquals("2", result);  // Expecting "2" in quaternary
+        assertEquals("2", result);
     }
 
     @Test
     public void testQuaternaryToDecimal() {
         String result = Calculator.quaternaryToDecimal("12");
-        assertEquals("6", result);  // "10" in quaternary equals "4" in decimal
+        assertEquals("6", result);
     }
 
     @Test
