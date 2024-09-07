@@ -120,12 +120,12 @@ public class Calculator {
 
     public static String quaternarySquareRoot(String a) {
 
-        int t;
-        int squareroot = Integer.parseInt(a) / 2;
+        double t;
+        double squareroot = Double.parseDouble(a) / 2;
         do
         {
             t = squareroot;
-            squareroot = (t + Integer.parseInt(a) / t) / 2;
+            squareroot = (t + Double.parseDouble(a) / t) / 2;
         }
         while ((t - squareroot) != 0);
         return String.valueOf(squareroot);
