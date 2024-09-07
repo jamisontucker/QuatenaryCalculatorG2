@@ -117,6 +117,21 @@ public class Calculator {
         return quotient;
     }
 
+
+    public static String quaternarySquareRoot(String a) {
+
+        int t;
+        int squareroot = Integer.parseInt(a) / 2;
+        do
+        {
+            t = squareroot;
+            squareroot = (t + Integer.parseInt(a) / t) / 2;
+        }
+        while ((t - squareroot) != 0);
+        return String.valueOf(squareroot);
+
+    }
+
     private static int compareQuaternary(String a, String b) {
         a = a.replaceFirst("^0+", "");
         b = b.replaceFirst("^0+", "");

@@ -70,7 +70,7 @@ public class UI {
         buttonMul.addActionListener(e -> setOperation("x"));
         buttonDiv.addActionListener(e -> setOperation("/"));
         buttonSquare.addActionListener(e -> square());
-        //buttonSquareRoot.addActionListener(e -> squareRoot());
+        buttonSquareRoot.addActionListener(e -> squareRoot());
         buttonClear.addActionListener(e -> clear());
         buttonEqu.addActionListener(e -> calculate());
 
@@ -141,15 +141,15 @@ public class UI {
         textField.setText(result);
     }
 
-    //private void squareRoot() {
-    //    String operand = textField.getText();
-    //    String result = Calculator.quaternarySquareRoot(operand);
-    //    lastQuaternaryResult = result; // Store the quaternary result
-    //    if (isDecimal) {
-    //        result = Calculator.quaternaryToDecimal(result);
-    //    }
-    //    textField.setText(result);
-    //}
+    private void squareRoot() {
+        String operand = textField.getText();
+        String result = Calculator.quaternarySquareRoot(operand);
+        lastQuaternaryResult = result; // Store the quaternary result
+        if (isDecimal) {
+            result = Calculator.quaternaryToDecimal(result);
+        }
+        textField.setText(result);
+    }
 
     // Toggle between quaternary and decimal display
     private void toggleDisplay() {
